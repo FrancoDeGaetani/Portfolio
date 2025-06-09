@@ -1,0 +1,181 @@
+
+.navbar{
+    background-color: rgb(0, 0, 0, 0.7);
+    backdrop-filter: blur(7px);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: all 0.6s ease;
+    z-index: 10;
+}
+.nav-bar__container{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.navbar-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.navbar__container-logo{
+    display: inline-block;
+    height: 50px;
+    margin: 5px;
+}
+.navbar__container-logo img{
+    height: 100%;
+    width: 100%;
+}
+.navbar__container-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.navbar__container-list-item{
+    width: 170px;
+    background-color:transparent;
+}
+.navbar__container-list-item a{
+    color: #fff;
+    width: 100%;
+    padding: 5px;
+    text-decoration: none;
+    font-family: var(--fuente-principal-bold);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar__container-list-item a:hover{
+    border-bottom: 2px solid var(--color-terciario);
+}
+.navbar__menu{
+    display: none;
+}
+
+@media (max-width:1000px) {
+    .navbar__container-list-item{
+        width: 140px;
+    }
+    .navbar__container-list-item a{
+        font-size: 20px;
+    }
+}
+@media (max-width:600px) {
+    .navbar-visible {
+        transition: all 0s ease;
+    }
+    .navbar{
+        transform: translateY(0);
+        z-index: -10;
+    }
+    .navbar.active{
+        z-index: 100;
+        opacity: .9;
+    }
+    .nav-bar__container{
+        display: none;
+        transform: translateY(-100%);
+        transition: all 0.6s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .nav-bar__container.active{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        opacity: 1;
+        transform: translateY(0);
+        width: 100%;
+        height: auto;
+        transition: all 0.6s ease;
+    }
+    .navbar__container-logo{
+        display: inline-block;
+        height: 90px;
+        width: 140px;
+        margin: 60px auto;
+    }
+    .navbar__container-list{
+        flex-direction: column;
+        gap: 20px;
+        padding: 50px;
+    }
+    .navbar__container-list-item{
+        height: 100%;
+        padding: 5px;
+    }
+    .navbar__container-list a{
+        font-size: 23px;
+    }
+    .navbar__menu{
+        width: 45px;
+        height: 45px;
+        display: block;
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        z-index: 1000;
+    }
+    .navbar__menu-button{
+        width: 45px;
+        height: 45px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        position: absolute;
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+        border: 2px solid #FAF4E3;
+        background-color: rgba(0, 0, 0, 0.8);;
+    }
+    .navbar__menu-button .navbar__menu-button-line{
+        position: relative;
+        width: 30px;
+        height: 3px;
+        background-color: #FAF4E3;
+        border-radius: 10px;
+    }
+    .navbar__menu-button .navbar__menu-button-line:first-child{
+        top: 0;
+        transform: rotate(0);
+        transition: top .5s ease, transform .4s ease;
+    }
+    .navbar__menu-button .navbar__menu-button-line:nth-child(2){
+        opacity: 1;
+        visibility: visible;
+        transition: all .2s ease;
+    }
+    .navbar__menu-button .navbar__menu-button-line:last-child{
+        top: 0;
+        transform: rotate(0);
+        transition: top .5s ease, transform .4s ease;
+    }
+    .navbar__menu-button.active{
+        border: 3px solid #FAF4E3;
+        background-color: rgba(0, 0, 0, 0.8);;
+    }
+    .navbar__menu-button.active .line{
+        background-color: #FAF4E3;
+    }
+    .navbar__menu-button.active .navbar__menu-button-line:first-child{
+        top: 10px;
+        transform: rotate(45deg);
+    }
+    .navbar__menu-button.active .navbar__menu-button-line:nth-child(2){
+        opacity: 0;
+        visibility: hidden;
+    }
+    .navbar__menu-button.active .navbar__menu-button-line:last-child{
+        top: -12px;
+        transform: rotate(-45deg);
+    }
+
+}

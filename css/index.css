@@ -1,0 +1,39 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--color-terciario);
+}
+ul {
+    list-style: none;
+}
+html {
+    scroll-behavior: smooth ;
+}
+section[id] {
+    scroll-margin-top: 70px;
+}
+.transition__project-about{
+    width: 100%;
+}
+.transition__project-about img{
+    width: 100%;
+    height: 90px;
+}
+@media (max-width: 650px){
+    .transition__project-about img{
+        height: 50px;
+    }
+}
+@media (max-width: 400px){
+    .transition__project-about img{
+        height: 35px;
+    }
+}
+
+
+
+

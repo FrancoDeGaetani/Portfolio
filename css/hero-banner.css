@@ -1,0 +1,221 @@
+
+.hero-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(42, 42, 42, 1) 100%), url('../assets/images/fondo-hero-banner.jpg') no-repeat center center/cover;
+}
+.hero-banner__container{
+    width: 70%;
+    display: flex;
+    gap: 65px;
+}
+.hero-banner__container-image img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.hero-banner__container-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+.hero-banner__container-text h1{
+    font-family: var(--fuente-principal-bold);
+    font-size: 60px;
+    color: #fff;
+}
+.hero-banner__container-text h1 span{ 
+    font-family: var(--fuente-principal-bold);
+    color: var(--color-texto);
+    font-size: 60px;
+}
+.hero-banner__container-stack h2{
+    font-family: var(--fuente-tituo);
+    font-size: 30px;
+    color: var(--color-texto);
+}
+.hero-banner__container-stack-icons{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.hero-banner__container-stack-icons a{
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid var(--color-terciario);
+    text-decoration: none;
+    color: var(--color-terciario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 5px;
+    transition: all .2s ease;
+}
+.hero-banner__container-stack-icons-button{
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid var(--color-terciario);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 5px;
+    height: 44px;
+    width: 44px;
+    overflow: hidden;
+    position: relative;
+    transition: all .6s ease-out;
+    cursor: pointer;
+}
+.hero-banner__container-stack-icons a:hover{
+    background-color: rgba(254, 254, 254, .7);
+    color: #000;
+    border: 1px solid #000;
+}
+.hero-banner__container-stack-icons-button p{
+    color: #fff;
+    font-family: var(--fuente-principal-bold);
+    font-size: 17px; 
+    position: absolute;
+    width: 140px;
+    left: 44px;
+    opacity: 0;
+    transition: all .4s ease-out;
+}
+.hero-banner__container-stack-icons-button:hover{
+    width: 200px;
+}
+.hero-banner__container-stack-icons-button:hover p{
+    opacity: 1;
+}
+.hero-banner__container-stack-icons-button i{
+    text-decoration: none;
+    color: var(--color-terciario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 5px;
+}
+.hero-banner__container-text-gmail{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 350px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid var(--color-terciario);
+    border-radius: 7px;
+    padding: 5px;
+}
+.hero-banner__container-text-gmail p{
+    font-family: var(--fuente-principal);
+    font-size: 17px; 
+    color: #fff;
+}
+.hero-banner__container-text-presentation{
+    font-family: var(--fuente-principal);
+    font-size: 19px; 
+    width: 85%;
+    text-wrap: pretty;
+    color: #fff;
+}
+.hero-banner__container-text-presentation span{
+    color: var(--color-texto);
+    font-family: var(--fuente-principal-bold);
+}
+
+@media (max-width: 1400px) {
+    .hero-banner__container{
+        width: 90%;
+    }
+}
+
+@media (max-width:1150px){
+    .hero-banner__container{
+        width: 100%;
+        gap: 30px;
+        margin: 30px;
+    }
+    .hero-banner__container-image img{
+        width: 350px;
+        height: 350px;
+    }
+    .hero-banner__container-text{
+        gap: 10px;
+    }
+    .hero-banner__container-text h1{
+        font-size: 50px;
+    }
+}
+
+@media (max-width:950px){
+    .hero-banner__container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-banner__container-text h1{
+        text-align: center;
+    }
+    .hero-banner__container-stack h2{
+        text-align: center;
+    }
+    .hero-banner__container-stack-icons{
+        justify-content: center;
+    }
+    .hero-banner__container-text-presentation{
+        text-align: center;
+        width: 100%;
+        padding: 0 40px;
+    }
+    .hero-banner__container-text-gmail{
+        margin: auto;
+        width: 350px;
+    }
+}
+
+@media (max-width:500px){
+    .hero-banner{
+        height: auto;
+    }
+    .hero-banner__container-image img{
+        width: 300px;
+        height: 300px;
+    }
+        .hero-banner__container-text-presentation{
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 400px){
+    .hero-banner__container-image img{
+        width: 270px;
+        height: 270px;
+    }
+    .hero-banner__container-text h1{
+        font-size: 45px;
+    }
+    .hero-banner__container-stack h2{
+        font-size: 25px;
+    }
+    .hero-banner__container-text-presentation{
+        padding: 0;
+        font-size: 17px; 
+    }
+    .hero-banner__container-stack-icons-button p{
+        font-size: 14px; 
+        width: 100px;
+    }
+    .hero-banner__container-stack-icons-button:hover{
+        width: 160px;
+    }
+    .hero-banner__container-text-gmail{
+        margin: auto;
+        width: 300px;
+    }
+}

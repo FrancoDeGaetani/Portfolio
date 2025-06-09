@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../assets/fonts/Montserrat/static/Montserrat-Regular.ttf);
+}
+@font-face{
+    font-family: 'Montserrat-Bold';
+    src: url(../assets/fonts/Montserrat/static/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: 'Playfair Display';
+    src: url(../assets/fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf);
+}
+@font-face {
+    font-family: 'inter';
+    src: url(../assets/fonts/Inter/static/Inter_18pt-Regular.ttf);
+}
+
+:root{
+      /*  Colores */
+    --color-fondo: #ECEBE8;
+    --color-texto: #D4AF37;
+    --color-principal: #2A2A2A;
+    --color-secundario: #F3D9B1;
+    --color-terciario: #F5E3C9;
+    --color-fondo-f: #5C6773;
+
+    /* Tipografías */
+    --fuente-principal: 'Montserrat', sans-serif;
+    --fuente-principal-bold: 'Montserrat-Bold', sans-serif;
+    --fuente-secundaria: 'Inter', sans-serif;
+    --fuente-titulo: 'Playfair Display', serif;
+
+}
+
+
+
