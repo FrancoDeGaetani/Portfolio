@@ -14,7 +14,7 @@ form.addEventListener("submit", async (e) => {
     };
 
     try {
-        const res = await fetch("http://localhost:3000/contact", {
+        const res = await fetch("https://portfolio-pohi.onrender.com/contact", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
