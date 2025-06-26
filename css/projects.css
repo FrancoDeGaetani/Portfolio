@@ -71,16 +71,21 @@
     flex-direction: column;
     justify-content: center;
     gap: 10px;
+    padding:10px;
 }
 .projects__container-project-card h3{
     font-family: var(--fuente-principal-bold);
     font-size: 30px;
     text-align: center;
+    padding: 10px;
+}
+.projects__container-project-card-text-description{
+    padding: 20px;
 }
 .projects__container-project-card p{
     font-family: var(--fuente-secundaria);
     font-size: 17px;
-    padding: 20px;
+    text-wrap: pretty;
 }
 .projects__container-project-card-text-icon{
     width: 100%;

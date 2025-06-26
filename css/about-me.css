@@ -58,10 +58,7 @@
     font-size: 17px;
     color: var(--color-fondo);
     text-wrap: pretty;
-}
-.about-me__container-text-description-me p span{
-    color: var(--color-texto);
-    font-family: var(--fuente-principal-bold);
+    margin-bottom: 10px;
 }
 /*about-me__container-skills*/
 

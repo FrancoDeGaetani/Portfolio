@@ -1,7 +1,6 @@
 
 import cors from "cors";
 import sendMail from "./email.js";
-import bodyParser from "body-parser";
 import express from "express";
 
 const app = express();

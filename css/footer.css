@@ -21,6 +21,7 @@
     border-radius: 50%;
     background-color: var(--color-terciario);
     border: none;
+    font-family: var(--fuente-principal);
     font-weight: 600;
     display: flex;
     align-items: center;
