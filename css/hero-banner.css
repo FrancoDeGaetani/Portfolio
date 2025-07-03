@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: auto;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(42, 42, 42, 1) 100%), url('../assets/images/fondo-hero-banner.jpg') no-repeat center center/cover;
 }
 .hero-banner__container{
@@ -17,6 +18,8 @@
     width: 400px;
     height: 400px;
     object-fit: cover;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--color-terciario);
     border-radius: 50%;
 }
 .hero-banner__container-text{
@@ -24,6 +27,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 30px;
+    width: 700px;
 }
 .hero-banner__container-text h1{
     font-family: var(--fuente-principal-bold);
@@ -141,7 +145,11 @@
     width: 100%;
 }
 }
-
+@media (max-wisth:1500px) {
+    .hero-banner__container-text{
+        width: 70%;
+    }
+}
 
 @media (max-width: 1400px) {
     .hero-banner__container{
@@ -151,10 +159,8 @@
         width: 85%;
     }
 }
-
 @media (max-width:1150px){
     .hero-banner__container{
-        width: 100%;
         gap: 30px;
         margin: 30px;
     }
@@ -176,6 +182,9 @@
         justify-content: center;
         align-items: center;
     }
+    .hero-banner__container-text{
+        width: auto;
+    }
     .hero-banner__container-text h1{
         text-align: center;
     }
@@ -187,8 +196,8 @@
     }
     .hero-banner__container-text-presentation-text{
         text-align: center;
-        width: 100%;
-        padding: 10px;
+        padding: 10px 5px;
+        margin: auto;
     }
     .hero-banner__container-text-gmail{
         margin: auto;
@@ -207,6 +216,9 @@
 }
 
 @media (max-width: 400px){
+    .hero-banner__container{
+        margin-top: 70px;
+    }
     .hero-banner__container-image img{
         width: 270px;
         height: 270px;
@@ -217,8 +229,7 @@
     .hero-banner__container-stack h2{
         font-size: 25px;
     }
-    .hero-banner__container-text-presentation{
-        padding: 0;
+    .hero-banner__container-text-presentation-text{
         font-size: 17px; 
     }
     .hero-banner__container-stack-icons-button p{

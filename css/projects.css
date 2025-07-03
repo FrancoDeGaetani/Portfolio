@@ -172,6 +172,14 @@
     }
 }
 @media(max-width:500px){
+    .projects__header h2{
+        width: 80%;
+        margin: 0 auto 50px auto ;
+        font-size: 31px;
+    }
+    .projects__container-project-card-text-description {
+        padding: 20px 5px;
+    }
     .projects__header p {
         width: 95%;
         padding: 8px;
@@ -181,6 +189,10 @@
 @media(max-width:400px){
     .projects__color {
         padding: 60px 10px;
+    }
+    .projects__header h2{
+        width: 90%;
+        font-size: 29px;
     }
     .projects__container-project{
         margin: 5px;

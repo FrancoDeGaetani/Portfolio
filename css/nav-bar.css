@@ -134,6 +134,7 @@
         position: absolute;
         box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
         border: 2px solid #FAF4E3;
+        border-radius: 10px;
         background-color: rgba(0, 0, 0, 0.8);;
     }
     .navbar__menu-button .navbar__menu-button-line{
