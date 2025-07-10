@@ -50,7 +50,7 @@
     flex-direction: row;
     gap: 10px;
 }
-.hero-banner__container-stack-icons a{
+.hero-banner__container-stack-icons-github, .hero-banner__container-stack-icons-linkedin{
     background-color: rgba(0, 0, 0, 0.7);
     border: 1px solid var(--color-terciario);
     text-decoration: none;
@@ -65,17 +65,18 @@
 }
 .hero-banner__container-stack-icons-button{
     background-color: rgba(0, 0, 0, 0.7);
+    color: var(--color-terciario);
     border: 1px solid var(--color-terciario);
-    display: flex;
-    justify-content: start;
-    align-items: center;
     border-radius: 5px;
     height: 44px;
-    width: 44px;
-    overflow: hidden;
-    position: relative;
-    transition: all .6s ease-out;
+    width: 200px;
     cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fuente-principal-bold);
+    transition: all .2s ease;
 }
 .hero-banner__container-stack-icons a:hover{
     background-color: rgba(254, 254, 254, .7);
@@ -92,12 +93,7 @@
     opacity: 0;
     transition: all .4s ease-out;
 }
-.hero-banner__container-stack-icons-button:hover{
-    width: 200px;
-}
-.hero-banner__container-stack-icons-button:hover p{
-    opacity: 1;
-}
+
 .hero-banner__container-stack-icons-button i{
     text-decoration: none;
     color: var(--color-terciario);
